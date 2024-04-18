@@ -7,7 +7,7 @@ Test
 
 <script>
 
-    fetch("'https://en.wiktionary.org/api/rest_v1/page/definition/peut?redirect=true'")
+    fetch("'https://en.wiktionary.org/api/rest_v1/page/definition/peut?redirect=true'", {"accept": 'application/json; charset=utf-8; profile="https://www.mediawiki.org/wiki/Specs/definition/0.8.0"'})
         .then((response) => console.log(response));
 
 </script>
