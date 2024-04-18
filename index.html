@@ -1,0 +1,17 @@
+<html>
+<head>
+
+</head>
+<body>
+Test
+
+<script>
+
+    fetch("'https://en.wiktionary.org/api/rest_v1/page/definition/peut?redirect=true'")
+        .then((response) => response.json())
+        .then((json) => console.log(json["title"]));
+
+</script>
+
+</body>
+</html>
